@@ -1,0 +1,1193 @@
+EESchema Schematic File Version 4
+LIBS:Vegvisir-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L kbd:ProMicro U1
+U 1 1 5C9B8A4D
+P 9750 2050
+F 0 "U1" H 9750 3087 60  0000 C CNN
+F 1 "ProMicro" H 9750 2981 60  0000 C CNN
+F 2 "emptystring:ProMicro_v2_Backside" H 9850 1000 60  0001 C CNN
+F 3 "" H 9850 1000 60  0000 C CNN
+	1    9750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C9B8AEE
+P 10800 1400
+F 0 "#PWR0101" H 10800 1150 50  0001 C CNN
+F 1 "GND" V 10805 1272 50  0000 R CNN
+F 2 "" H 10800 1400 50  0001 C CNN
+F 3 "" H 10800 1400 50  0001 C CNN
+	1    10800 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10450 1400 10800 1400
+$Comp
+L power:VCC #PWR0102
+U 1 1 5C9B8B42
+P 10800 1600
+F 0 "#PWR0102" H 10800 1450 50  0001 C CNN
+F 1 "VCC" V 10817 1728 50  0000 L CNN
+F 2 "" H 10800 1600 50  0001 C CNN
+F 3 "" H 10800 1600 50  0001 C CNN
+	1    10800 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 1600 10800 1600
+$Comp
+L power:GND #PWR0103
+U 1 1 5C9B8B7B
+P 8700 1650
+F 0 "#PWR0103" H 8700 1400 50  0001 C CNN
+F 1 "GND" H 8705 1477 50  0000 C CNN
+F 2 "" H 8700 1650 50  0001 C CNN
+F 3 "" H 8700 1650 50  0001 C CNN
+	1    8700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1600 8700 1600
+Wire Wire Line
+	8700 1600 8700 1650
+Wire Wire Line
+	9050 1500 8700 1500
+Wire Wire Line
+	8700 1500 8700 1600
+Connection ~ 8700 1600
+$Comp
+L kbd:SW_PUSH SW32
+U 1 1 5C9B8BF4
+P 10255 4520
+F 0 "SW32" H 10255 4775 50  0000 C CNN
+F 1 "SW_PUSH" H 10255 4684 50  0000 C CNN
+F 2 "kbd:ResetSW" H 10255 4520 50  0001 C CNN
+F 3 "" H 10255 4520 50  0000 C CNN
+	1    10255 4520
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C9B8C79
+P 9955 4520
+F 0 "#PWR0104" H 9955 4270 50  0001 C CNN
+F 1 "GND" H 9960 4347 50  0000 C CNN
+F 2 "" H 9955 4520 50  0001 C CNN
+F 3 "" H 9955 4520 50  0001 C CNN
+	1    9955 4520
+	1    0    0    -1  
+$EndComp
+Text GLabel 10555 4520 2    50   Input ~ 0
+reset
+Text GLabel 10450 1500 2    50   Input ~ 0
+reset
+$Comp
+L kbd:SW_PUSH SW1
+U 1 1 5C9B8CC2
+P 2200 1400
+F 0 "SW1" H 2200 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 2200 1564 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 2200 1400 50  0001 C CNN
+F 3 "" H 2200 1400 50  0000 C CNN
+	1    2200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW6
+U 1 1 5C9B8DB9
+P 3100 1400
+F 0 "SW6" H 3100 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 3100 1564 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 3100 1400 50  0001 C CNN
+F 3 "" H 3100 1400 50  0000 C CNN
+	1    3100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW11
+U 1 1 5C9B8E39
+P 4000 1400
+F 0 "SW11" H 4000 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 4000 1564 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4000 1400 50  0001 C CNN
+F 3 "" H 4000 1400 50  0000 C CNN
+	1    4000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW16
+U 1 1 5C9B8E6F
+P 4900 1400
+F 0 "SW16" H 4900 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 4900 1564 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4900 1400 50  0001 C CNN
+F 3 "" H 4900 1400 50  0000 C CNN
+	1    4900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW21
+U 1 1 5C9B8EB9
+P 5800 1400
+F 0 "SW21" H 5800 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 5800 1564 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 5800 1400 50  0001 C CNN
+F 3 "" H 5800 1400 50  0000 C CNN
+	1    5800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW26
+U 1 1 5C9B909F
+P 6700 1400
+F 0 "SW26" H 6700 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 6700 1564 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 6700 1400 50  0001 C CNN
+F 3 "" H 6700 1400 50  0000 C CNN
+	1    6700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW2
+U 1 1 5C9B924D
+P 2200 2300
+F 0 "SW2" H 2200 2555 50  0000 C CNN
+F 1 "SW_PUSH" H 2200 2464 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 2200 2300 50  0001 C CNN
+F 3 "" H 2200 2300 50  0000 C CNN
+	1    2200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW7
+U 1 1 5C9B9254
+P 3100 2300
+F 0 "SW7" H 3100 2555 50  0000 C CNN
+F 1 "SW_PUSH" H 3100 2464 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 3100 2300 50  0001 C CNN
+F 3 "" H 3100 2300 50  0000 C CNN
+	1    3100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW12
+U 1 1 5C9B925B
+P 4000 2300
+F 0 "SW12" H 4000 2555 50  0000 C CNN
+F 1 "SW_PUSH" H 4000 2464 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4000 2300 50  0001 C CNN
+F 3 "" H 4000 2300 50  0000 C CNN
+	1    4000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW17
+U 1 1 5C9B9262
+P 4900 2300
+F 0 "SW17" H 4900 2555 50  0000 C CNN
+F 1 "SW_PUSH" H 4900 2464 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4900 2300 50  0001 C CNN
+F 3 "" H 4900 2300 50  0000 C CNN
+	1    4900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW22
+U 1 1 5C9B9269
+P 5800 2300
+F 0 "SW22" H 5800 2555 50  0000 C CNN
+F 1 "SW_PUSH" H 5800 2464 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 5800 2300 50  0001 C CNN
+F 3 "" H 5800 2300 50  0000 C CNN
+	1    5800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW27
+U 1 1 5C9B9270
+P 6700 2300
+F 0 "SW27" H 6700 2555 50  0000 C CNN
+F 1 "SW_PUSH" H 6700 2464 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 6700 2300 50  0001 C CNN
+F 3 "" H 6700 2300 50  0000 C CNN
+	1    6700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW3
+U 1 1 5C9B94BE
+P 2200 3200
+F 0 "SW3" H 2200 3455 50  0000 C CNN
+F 1 "SW_PUSH" H 2200 3364 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 2200 3200 50  0001 C CNN
+F 3 "" H 2200 3200 50  0000 C CNN
+	1    2200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW8
+U 1 1 5C9B94C5
+P 3100 3200
+F 0 "SW8" H 3100 3455 50  0000 C CNN
+F 1 "SW_PUSH" H 3100 3364 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 3100 3200 50  0001 C CNN
+F 3 "" H 3100 3200 50  0000 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW13
+U 1 1 5C9B94CC
+P 4000 3200
+F 0 "SW13" H 4000 3455 50  0000 C CNN
+F 1 "SW_PUSH" H 4000 3364 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0000 C CNN
+	1    4000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW18
+U 1 1 5C9B94D3
+P 4900 3200
+F 0 "SW18" H 4900 3455 50  0000 C CNN
+F 1 "SW_PUSH" H 4900 3364 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4900 3200 50  0001 C CNN
+F 3 "" H 4900 3200 50  0000 C CNN
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW23
+U 1 1 5C9B94DA
+P 5800 3200
+F 0 "SW23" H 5800 3455 50  0000 C CNN
+F 1 "SW_PUSH" H 5800 3364 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 5800 3200 50  0001 C CNN
+F 3 "" H 5800 3200 50  0000 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW28
+U 1 1 5C9B94E1
+P 6700 3200
+F 0 "SW28" H 6700 3455 50  0000 C CNN
+F 1 "SW_PUSH" H 6700 3364 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 6700 3200 50  0001 C CNN
+F 3 "" H 6700 3200 50  0000 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW4
+U 1 1 5C9B9683
+P 2200 4100
+F 0 "SW4" H 2200 4355 50  0000 C CNN
+F 1 "SW_PUSH" H 2200 4264 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 2200 4100 50  0001 C CNN
+F 3 "" H 2200 4100 50  0000 C CNN
+	1    2200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW9
+U 1 1 5C9B968A
+P 3100 4100
+F 0 "SW9" H 3100 4355 50  0000 C CNN
+F 1 "SW_PUSH" H 3100 4264 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 3100 4100 50  0001 C CNN
+F 3 "" H 3100 4100 50  0000 C CNN
+	1    3100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW14
+U 1 1 5C9B9691
+P 4000 4100
+F 0 "SW14" H 4000 4355 50  0000 C CNN
+F 1 "SW_PUSH" H 4000 4264 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0000 C CNN
+	1    4000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW19
+U 1 1 5C9B9698
+P 4900 4100
+F 0 "SW19" H 4900 4355 50  0000 C CNN
+F 1 "SW_PUSH" H 4900 4264 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4900 4100 50  0001 C CNN
+F 3 "" H 4900 4100 50  0000 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW24
+U 1 1 5C9B969F
+P 5800 4100
+F 0 "SW24" H 5800 4355 50  0000 C CNN
+F 1 "SW_PUSH" H 5800 4264 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 5800 4100 50  0001 C CNN
+F 3 "" H 5800 4100 50  0000 C CNN
+	1    5800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW29
+U 1 1 5C9B96A6
+P 6700 4100
+F 0 "SW29" H 6700 4355 50  0000 C CNN
+F 1 "SW_PUSH" H 6700 4264 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 6700 4100 50  0001 C CNN
+F 3 "" H 6700 4100 50  0000 C CNN
+	1    6700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW5
+U 1 1 5C9B9858
+P 2200 5000
+F 0 "SW5" H 2200 5255 50  0000 C CNN
+F 1 "SW_PUSH" H 2200 5164 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 2200 5000 50  0001 C CNN
+F 3 "" H 2200 5000 50  0000 C CNN
+	1    2200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW10
+U 1 1 5C9B985F
+P 3100 5000
+F 0 "SW10" H 3100 5255 50  0000 C CNN
+F 1 "SW_PUSH" H 3100 5164 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 3100 5000 50  0001 C CNN
+F 3 "" H 3100 5000 50  0000 C CNN
+	1    3100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW15
+U 1 1 5C9B9866
+P 4000 5000
+F 0 "SW15" H 4000 5255 50  0000 C CNN
+F 1 "SW_PUSH" H 4000 5164 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4000 5000 50  0001 C CNN
+F 3 "" H 4000 5000 50  0000 C CNN
+	1    4000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW20
+U 1 1 5C9B986D
+P 4900 5000
+F 0 "SW20" H 4900 5255 50  0000 C CNN
+F 1 "SW_PUSH" H 4900 5164 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 4900 5000 50  0001 C CNN
+F 3 "" H 4900 5000 50  0000 C CNN
+	1    4900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW25
+U 1 1 5C9B9874
+P 5800 5000
+F 0 "SW25" H 5800 5255 50  0000 C CNN
+F 1 "SW_PUSH" H 5800 5164 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 5800 5000 50  0001 C CNN
+F 3 "" H 5800 5000 50  0000 C CNN
+	1    5800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW30
+U 1 1 5C9B987B
+P 6700 5000
+F 0 "SW30" H 6700 5255 50  0000 C CNN
+F 1 "SW_PUSH" H 6700 5164 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 6700 5000 50  0001 C CNN
+F 3 "" H 6700 5000 50  0000 C CNN
+	1    6700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 5C9B9B61
+P 2500 1550
+F 0 "D1" V 2546 1471 50  0000 R CNN
+F 1 "1N4148" V 2455 1471 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 2500 1375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2500 1550 50  0001 C CNN
+	1    2500 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D6
+U 1 1 5C9B9CE6
+P 3400 1550
+F 0 "D6" V 3446 1471 50  0000 R CNN
+F 1 "1N4148" V 3355 1471 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3400 1375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 1550 50  0001 C CNN
+	1    3400 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D11
+U 1 1 5C9B9D56
+P 4300 1550
+F 0 "D11" V 4346 1471 50  0000 R CNN
+F 1 "1N4148" V 4255 1471 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4300 1375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D16
+U 1 1 5C9B9E36
+P 5200 1550
+F 0 "D16" V 5246 1471 50  0000 R CNN
+F 1 "1N4148" V 5155 1471 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 5200 1375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5200 1550 50  0001 C CNN
+	1    5200 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D21
+U 1 1 5C9B9EAE
+P 6100 1550
+F 0 "D21" V 6146 1471 50  0000 R CNN
+F 1 "1N4148" V 6055 1471 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 6100 1375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 6100 1550 50  0001 C CNN
+	1    6100 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D26
+U 1 1 5C9B9F2E
+P 7000 1550
+F 0 "D26" V 7046 1471 50  0000 R CNN
+F 1 "1N4148" V 6955 1471 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7000 1375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7000 1550 50  0001 C CNN
+	1    7000 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 5C9BA09F
+P 2500 2450
+F 0 "D2" V 2546 2371 50  0000 R CNN
+F 1 "1N4148" V 2455 2371 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 2500 2275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2500 2450 50  0001 C CNN
+	1    2500 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D7
+U 1 1 5C9BA0A6
+P 3400 2450
+F 0 "D7" V 3446 2371 50  0000 R CNN
+F 1 "1N4148" V 3355 2371 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3400 2275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 2450 50  0001 C CNN
+	1    3400 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D12
+U 1 1 5C9BA0AD
+P 4300 2450
+F 0 "D12" V 4346 2371 50  0000 R CNN
+F 1 "1N4148" V 4255 2371 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4300 2275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D17
+U 1 1 5C9BA0B4
+P 5200 2450
+F 0 "D17" V 5246 2371 50  0000 R CNN
+F 1 "1N4148" V 5155 2371 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 5200 2275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5200 2450 50  0001 C CNN
+	1    5200 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D22
+U 1 1 5C9BA0BB
+P 6100 2450
+F 0 "D22" V 6146 2371 50  0000 R CNN
+F 1 "1N4148" V 6055 2371 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 6100 2275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 6100 2450 50  0001 C CNN
+	1    6100 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D27
+U 1 1 5C9BA0C2
+P 7000 2450
+F 0 "D27" V 7046 2371 50  0000 R CNN
+F 1 "1N4148" V 6955 2371 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7000 2275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7000 2450 50  0001 C CNN
+	1    7000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 5C9BA1E0
+P 2500 3350
+F 0 "D3" V 2546 3271 50  0000 R CNN
+F 1 "1N4148" V 2455 3271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 2500 3175 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2500 3350 50  0001 C CNN
+	1    2500 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D8
+U 1 1 5C9BA1E7
+P 3400 3350
+F 0 "D8" V 3446 3271 50  0000 R CNN
+F 1 "1N4148" V 3355 3271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3400 3175 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 3350 50  0001 C CNN
+	1    3400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D13
+U 1 1 5C9BA1EE
+P 4300 3350
+F 0 "D13" V 4346 3271 50  0000 R CNN
+F 1 "1N4148" V 4255 3271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4300 3175 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D18
+U 1 1 5C9BA1F5
+P 5200 3350
+F 0 "D18" V 5246 3271 50  0000 R CNN
+F 1 "1N4148" V 5155 3271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 5200 3175 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5200 3350 50  0001 C CNN
+	1    5200 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D23
+U 1 1 5C9BA1FC
+P 6100 3350
+F 0 "D23" V 6146 3271 50  0000 R CNN
+F 1 "1N4148" V 6055 3271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 6100 3175 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 6100 3350 50  0001 C CNN
+	1    6100 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D28
+U 1 1 5C9BA203
+P 7000 3350
+F 0 "D28" V 7046 3271 50  0000 R CNN
+F 1 "1N4148" V 6955 3271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7000 3175 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7000 3350 50  0001 C CNN
+	1    7000 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D4
+U 1 1 5C9BA3A2
+P 2500 4250
+F 0 "D4" V 2546 4171 50  0000 R CNN
+F 1 "1N4148" V 2455 4171 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 2500 4075 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2500 4250 50  0001 C CNN
+	1    2500 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D9
+U 1 1 5C9BA3A9
+P 3400 4250
+F 0 "D9" V 3446 4171 50  0000 R CNN
+F 1 "1N4148" V 3355 4171 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3400 4075 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 4250 50  0001 C CNN
+	1    3400 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D14
+U 1 1 5C9BA3B0
+P 4300 4250
+F 0 "D14" V 4346 4171 50  0000 R CNN
+F 1 "1N4148" V 4255 4171 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4300 4075 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4300 4250 50  0001 C CNN
+	1    4300 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D19
+U 1 1 5C9BA3B7
+P 5200 4250
+F 0 "D19" V 5246 4171 50  0000 R CNN
+F 1 "1N4148" V 5155 4171 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 5200 4075 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5200 4250 50  0001 C CNN
+	1    5200 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D24
+U 1 1 5C9BA3BE
+P 6100 4250
+F 0 "D24" V 6146 4171 50  0000 R CNN
+F 1 "1N4148" V 6055 4171 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 6100 4075 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 6100 4250 50  0001 C CNN
+	1    6100 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D29
+U 1 1 5C9BA3C5
+P 7000 4250
+F 0 "D29" V 7046 4171 50  0000 R CNN
+F 1 "1N4148" V 6955 4171 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7000 4075 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7000 4250 50  0001 C CNN
+	1    7000 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D5
+U 1 1 5C9BA5F1
+P 2500 5150
+F 0 "D5" V 2546 5071 50  0000 R CNN
+F 1 "1N4148" V 2455 5071 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 2500 4975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2500 5150 50  0001 C CNN
+	1    2500 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D10
+U 1 1 5C9BA5F8
+P 3400 5150
+F 0 "D10" V 3446 5071 50  0000 R CNN
+F 1 "1N4148" V 3355 5071 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3400 4975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3400 5150 50  0001 C CNN
+	1    3400 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D15
+U 1 1 5C9BA5FF
+P 4300 5150
+F 0 "D15" V 4346 5071 50  0000 R CNN
+F 1 "1N4148" V 4255 5071 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4300 4975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4300 5150 50  0001 C CNN
+	1    4300 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D20
+U 1 1 5C9BA606
+P 5200 5150
+F 0 "D20" V 5246 5071 50  0000 R CNN
+F 1 "1N4148" V 5155 5071 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 5200 4975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5200 5150 50  0001 C CNN
+	1    5200 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D25
+U 1 1 5C9BA60D
+P 6100 5150
+F 0 "D25" V 6146 5071 50  0000 R CNN
+F 1 "1N4148" V 6055 5071 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 6100 4975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 6100 5150 50  0001 C CNN
+	1    6100 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D30
+U 1 1 5C9BA614
+P 7000 5505
+F 0 "D30" V 7046 5426 50  0000 R CNN
+F 1 "1N4148" V 6955 5426 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7000 5330 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7000 5505 50  0001 C CNN
+	1    7000 5505
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 5000 6400 4100
+Connection ~ 6400 1400
+Wire Wire Line
+	6400 1400 6400 900 
+Connection ~ 6400 2300
+Wire Wire Line
+	6400 2300 6400 1400
+Connection ~ 6400 3200
+Wire Wire Line
+	6400 3200 6400 2300
+Connection ~ 6400 4100
+Wire Wire Line
+	6400 4100 6400 3200
+Wire Wire Line
+	5500 900  5500 1400
+Connection ~ 5500 1400
+Wire Wire Line
+	5500 1400 5500 2300
+Connection ~ 5500 2300
+Wire Wire Line
+	5500 2300 5500 3200
+Connection ~ 5500 3200
+Wire Wire Line
+	5500 3200 5500 4100
+Connection ~ 5500 4100
+Wire Wire Line
+	5500 4100 5500 5000
+Wire Wire Line
+	4600 900  4600 1400
+Connection ~ 4600 1400
+Wire Wire Line
+	4600 1400 4600 2300
+Connection ~ 4600 2300
+Wire Wire Line
+	4600 2300 4600 3200
+Connection ~ 4600 3200
+Wire Wire Line
+	4600 3200 4600 4100
+Connection ~ 4600 4100
+Wire Wire Line
+	4600 4100 4600 5000
+Wire Wire Line
+	3700 900  3700 1400
+Connection ~ 3700 1400
+Wire Wire Line
+	3700 1400 3700 2300
+Connection ~ 3700 2300
+Wire Wire Line
+	3700 2300 3700 3200
+Connection ~ 3700 3200
+Wire Wire Line
+	3700 3200 3700 4100
+Connection ~ 3700 4100
+Wire Wire Line
+	3700 4100 3700 5000
+Wire Wire Line
+	2800 900  2800 1400
+Connection ~ 2800 1400
+Wire Wire Line
+	2800 1400 2800 2300
+Connection ~ 2800 2300
+Wire Wire Line
+	2800 2300 2800 3200
+Connection ~ 2800 3200
+Wire Wire Line
+	2800 3200 2800 4100
+Connection ~ 2800 4100
+Wire Wire Line
+	2800 4100 2800 5000
+Wire Wire Line
+	1900 900  1900 1400
+Connection ~ 1900 1400
+Wire Wire Line
+	1900 1400 1900 2300
+Connection ~ 1900 2300
+Wire Wire Line
+	1900 2300 1900 3200
+Connection ~ 1900 3200
+Wire Wire Line
+	1900 3200 1900 4100
+Connection ~ 1900 4100
+Wire Wire Line
+	1900 4100 1900 5000
+Text GLabel 1900 900  0    50   Input ~ 0
+col0
+Text GLabel 2800 900  0    50   Input ~ 0
+col1
+Text GLabel 3700 900  0    50   Input ~ 0
+col2
+Text GLabel 4600 900  0    50   Input ~ 0
+col3
+Text GLabel 5500 900  0    50   Input ~ 0
+col4
+Text GLabel 6400 900  0    50   Input ~ 0
+col5
+Wire Wire Line
+	7000 1700 6100 1700
+Connection ~ 2500 1700
+Wire Wire Line
+	2500 1700 1300 1700
+Connection ~ 3400 1700
+Wire Wire Line
+	3400 1700 2500 1700
+Connection ~ 4300 1700
+Wire Wire Line
+	4300 1700 3400 1700
+Connection ~ 5200 1700
+Wire Wire Line
+	5200 1700 4300 1700
+Connection ~ 6100 1700
+Wire Wire Line
+	6100 1700 5200 1700
+Wire Wire Line
+	1300 3500 2500 3500
+Connection ~ 2500 3500
+Wire Wire Line
+	2500 3500 3400 3500
+Connection ~ 3400 3500
+Wire Wire Line
+	3400 3500 4300 3500
+Connection ~ 4300 3500
+Wire Wire Line
+	4300 3500 5200 3500
+Connection ~ 5200 3500
+Wire Wire Line
+	5200 3500 6100 3500
+Connection ~ 6100 3500
+Wire Wire Line
+	6100 3500 7000 3500
+Wire Wire Line
+	1300 2600 2500 2600
+Connection ~ 2500 2600
+Wire Wire Line
+	2500 2600 3400 2600
+Connection ~ 3400 2600
+Wire Wire Line
+	3400 2600 4300 2600
+Connection ~ 4300 2600
+Wire Wire Line
+	4300 2600 5200 2600
+Connection ~ 5200 2600
+Wire Wire Line
+	5200 2600 6100 2600
+Connection ~ 6100 2600
+Wire Wire Line
+	6100 2600 7000 2600
+Wire Wire Line
+	1300 4400 2500 4400
+Connection ~ 2500 4400
+Wire Wire Line
+	2500 4400 3400 4400
+Connection ~ 3400 4400
+Wire Wire Line
+	3400 4400 4300 4400
+Connection ~ 4300 4400
+Wire Wire Line
+	4300 4400 5200 4400
+Connection ~ 5200 4400
+Wire Wire Line
+	5200 4400 6100 4400
+Connection ~ 6100 4400
+Wire Wire Line
+	6100 4400 7000 4400
+Wire Wire Line
+	6100 5300 6100 5700
+Connection ~ 6100 5700
+Wire Wire Line
+	6100 5700 7000 5700
+Wire Wire Line
+	5200 5300 5200 5700
+Connection ~ 5200 5700
+Wire Wire Line
+	5200 5700 6100 5700
+Wire Wire Line
+	4300 5300 4300 5700
+Connection ~ 4300 5700
+Wire Wire Line
+	4300 5700 5200 5700
+Wire Wire Line
+	3400 5300 3400 5700
+Connection ~ 3400 5700
+Wire Wire Line
+	3400 5700 4300 5700
+Text GLabel 1300 1700 0    50   Input ~ 0
+row0
+Text GLabel 1300 2600 0    50   Input ~ 0
+row1
+Text GLabel 1300 3500 0    50   Input ~ 0
+row2
+Text GLabel 1300 4400 0    50   Input ~ 0
+row3
+Text GLabel 1300 5700 0    50   Input ~ 0
+row4
+Text GLabel 10450 2400 2    50   Input ~ 0
+row0
+Text GLabel 10450 2300 2    50   Input ~ 0
+row1
+Text GLabel 10450 2200 2    50   Input ~ 0
+row2
+Text GLabel 10450 2100 2    50   Input ~ 0
+row3
+Text GLabel 10450 2000 2    50   Input ~ 0
+row4
+Text GLabel 9050 2400 0    50   Input ~ 0
+col0
+Text GLabel 9050 2300 0    50   Input ~ 0
+col1
+Text GLabel 9050 2200 0    50   Input ~ 0
+col2
+Text GLabel 9050 2100 0    50   Input ~ 0
+col3
+Text GLabel 9050 2000 0    50   Input ~ 0
+col4
+Text GLabel 9050 1900 0    50   Input ~ 0
+col5
+NoConn ~ 10450 1900
+NoConn ~ 10450 1800
+NoConn ~ 10450 1700
+NoConn ~ 10450 1300
+NoConn ~ 9050 1300
+NoConn ~ 9050 1700
+NoConn ~ 9050 1800
+$Comp
+L kbd:MJ-4PP-9 J1
+U 1 1 5C9BAD96
+P 9845 5180
+F 0 "J1" H 9875 5456 50  0000 C CNN
+F 1 "MJ-4PP-9" H 9875 5365 50  0000 C CNN
+F 2 "kbd:MJ-4PP-9" H 10120 5355 50  0001 C CNN
+F 3 "~" H 10120 5355 50  0001 C CNN
+	1    9845 5180
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10045 5105
+$Comp
+L power:VCC #PWR0105
+U 1 1 5C9C388B
+P 10305 5070
+F 0 "#PWR0105" H 10305 4920 50  0001 C CNN
+F 1 "VCC" H 10322 5243 50  0000 C CNN
+F 2 "" H 10305 5070 50  0001 C CNN
+F 3 "" H 10305 5070 50  0001 C CNN
+	1    10305 5070
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C9C39C2
+P 10515 5320
+F 0 "#PWR0106" H 10515 5070 50  0001 C CNN
+F 1 "GND" H 10520 5147 50  0000 C CNN
+F 2 "" H 10515 5320 50  0001 C CNN
+F 3 "" H 10515 5320 50  0001 C CNN
+	1    10515 5320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10045 5155 10305 5155
+Wire Wire Line
+	10305 5070 10305 5155
+Wire Wire Line
+	10045 5205 10515 5205
+Wire Wire Line
+	10515 5205 10515 5320
+Text GLabel 10135 5520 2    50   Input ~ 0
+data
+Text GLabel 9050 1400 0    50   Input ~ 0
+data
+Wire Wire Line
+	10045 5255 10045 5520
+Wire Wire Line
+	10045 5520 10135 5520
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C9CBDF0
+P 9770 6070
+F 0 "#FLG0101" H 9770 6145 50  0001 C CNN
+F 1 "PWR_FLAG" H 9770 6244 50  0000 C CNN
+F 2 "" H 9770 6070 50  0001 C CNN
+F 3 "~" H 9770 6070 50  0001 C CNN
+	1    9770 6070
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C9CC0C2
+P 10360 6055
+F 0 "#FLG0102" H 10360 6130 50  0001 C CNN
+F 1 "PWR_FLAG" H 10360 6229 50  0000 C CNN
+F 2 "" H 10360 6055 50  0001 C CNN
+F 3 "~" H 10360 6055 50  0001 C CNN
+	1    10360 6055
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 5C9CC2C6
+P 9770 6070
+F 0 "#PWR0107" H 9770 5920 50  0001 C CNN
+F 1 "VCC" H 9788 6243 50  0000 C CNN
+F 2 "" H 9770 6070 50  0001 C CNN
+F 3 "" H 9770 6070 50  0001 C CNN
+	1    9770 6070
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C9CC4BD
+P 10360 6055
+F 0 "#PWR0108" H 10360 5805 50  0001 C CNN
+F 1 "GND" H 10365 5882 50  0000 C CNN
+F 2 "" H 10360 6055 50  0001 C CNN
+F 3 "" H 10360 6055 50  0001 C CNN
+	1    10360 6055
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5700 2500 5700
+Wire Wire Line
+	2500 5300 2500 5700
+Connection ~ 2500 5700
+Wire Wire Line
+	2500 5700 3400 5700
+$Comp
+L kbd:SW_PUSH SW31
+U 1 1 5C9F0D2E
+P 6700 5355
+F 0 "SW31" H 6700 5610 50  0000 C CNN
+F 1 "SW_PUSH" H 6700 5519 50  0000 C CNN
+F 2 "keyswitches:MX_reversible_minimal" H 6700 5355 50  0001 C CNN
+F 3 "" H 6700 5355 50  0000 C CNN
+	1    6700 5355
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5000 7000 5355
+Connection ~ 7000 5355
+Wire Wire Line
+	7000 5655 7000 5700
+Wire Wire Line
+	6400 5000 6400 5355
+Connection ~ 6400 5000
+$Comp
+L kbd:ProMicro U2
+U 1 1 5CA0A59E
+P 9805 3570
+F 0 "U2" H 9805 4607 60  0000 C CNN
+F 1 "ProMicro" H 9805 4501 60  0000 C CNN
+F 2 "emptystring:ProMicro_v2_Backside" H 9905 2520 60  0001 C CNN
+F 3 "" H 9905 2520 60  0000 C CNN
+	1    9805 3570
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5CA0A5A5
+P 10855 2920
+F 0 "#PWR0109" H 10855 2670 50  0001 C CNN
+F 1 "GND" V 10860 2792 50  0000 R CNN
+F 2 "" H 10855 2920 50  0001 C CNN
+F 3 "" H 10855 2920 50  0001 C CNN
+	1    10855 2920
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10505 2920 10855 2920
+$Comp
+L power:VCC #PWR0110
+U 1 1 5CA0A5AC
+P 10855 3120
+F 0 "#PWR0110" H 10855 2970 50  0001 C CNN
+F 1 "VCC" V 10872 3248 50  0000 L CNN
+F 2 "" H 10855 3120 50  0001 C CNN
+F 3 "" H 10855 3120 50  0001 C CNN
+	1    10855 3120
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10505 3120 10855 3120
+$Comp
+L power:GND #PWR0111
+U 1 1 5CA0A5B3
+P 8755 3170
+F 0 "#PWR0111" H 8755 2920 50  0001 C CNN
+F 1 "GND" H 8760 2997 50  0000 C CNN
+F 2 "" H 8755 3170 50  0001 C CNN
+F 3 "" H 8755 3170 50  0001 C CNN
+	1    8755 3170
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9105 3120 8755 3120
+Wire Wire Line
+	8755 3120 8755 3170
+Wire Wire Line
+	9105 3020 8755 3020
+Wire Wire Line
+	8755 3020 8755 3120
+Connection ~ 8755 3120
+Text GLabel 10505 3020 2    50   Input ~ 0
+reset
+Text GLabel 10505 3920 2    50   Input ~ 0
+row0
+Text GLabel 10505 3820 2    50   Input ~ 0
+row1
+Text GLabel 10505 3720 2    50   Input ~ 0
+row2
+Text GLabel 10505 3620 2    50   Input ~ 0
+row3
+Text GLabel 10505 3520 2    50   Input ~ 0
+row4
+Text GLabel 9105 3920 0    50   Input ~ 0
+col0
+Text GLabel 9105 3820 0    50   Input ~ 0
+col1
+Text GLabel 9105 3720 0    50   Input ~ 0
+col2
+Text GLabel 9105 3620 0    50   Input ~ 0
+col3
+Text GLabel 9105 3520 0    50   Input ~ 0
+col4
+Text GLabel 9105 3420 0    50   Input ~ 0
+col5
+NoConn ~ 10505 3420
+NoConn ~ 10505 3320
+NoConn ~ 10505 3220
+NoConn ~ 10505 2820
+NoConn ~ 9105 2820
+NoConn ~ 9105 3220
+NoConn ~ 9105 3320
+Text GLabel 9105 2920 0    50   Input ~ 0
+data
+$EndSCHEMATC
